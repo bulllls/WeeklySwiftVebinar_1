@@ -14,23 +14,45 @@ class PhotosCollectionViewController: UICollectionViewController {
     var networkDataFetcher = NetworkDataFetcher()
     private var timer: Timer?
     
+    private var photos = [UnsplashPhoto]()
+    
+    private var selectedImages = [UIImage]()
+    
+    private let itemsPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    
     private lazy var addBarButtonItem: UIBarButtonItem = {
-        return UIBarButtonItem(barButtonSystemItem: .add, target: self,
-                               action: #selector(addBarButtonTapped))
+        return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBarButtonTapped))
     }()
     
     private lazy var actionBarButtonItem: UIBarButtonItem = {
-       return UIBarButtonItem(barButtonSystemItem: .action, target: self,
-                              action: #selector(actionBarButtonTapped))
+       return UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(actionBarButtonTapped))
     }()
+    
+    private var numberOfSelectedPhotos: Int {
+        return collectionView.indexPathsForSelectedItems?.count ?? 0
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.backgroundColor = .orange
+        
+        undateNavButtonsState()
+        collectionView.backgroundColor = .white
         setupNavigationBar()
         setupCollectionView()
         setupSearchBar()
+    }
+    
+    private func undateNavButtonsState() {
+        addBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
+        actionBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
+    }
+    
+    func refresh() {
+        self.selectedImages.removeAll()
+        self.collectionView.selectItem(at: nil, animated: true, scrollPosition: [])
+        undateNavButtonsState()
     }
     
     // MARK: - NavigationItems action
