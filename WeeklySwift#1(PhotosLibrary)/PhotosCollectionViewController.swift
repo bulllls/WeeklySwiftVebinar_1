@@ -10,7 +10,9 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
-    var networkService = NetworkService()
+    
+    var networkDataFetcher = NetworkDataFetcher()
+    private var timer: Timer?
     
     private lazy var addBarButtonItem: UIBarButtonItem = {
         return UIBarButtonItem(barButtonSystemItem: .add, target: self,
@@ -98,14 +100,36 @@ extension PhotosCollectionViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
         
-//        timer?.invalidate()
-//        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
-//            self.networkDataFetcher.fetchImages(searchTerm: searchText) { [weak self] (searchResults) in
-//                guard let fetchedPhotos = searchResults else { return }
-//                self?.photos = fetchedPhotos.results
-//                self?.collectionView.reloadData()
-//                self?.refresh()
-//            }
-//        })
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
+            self.networkDataFetcher.fetchImages(searchTerm: searchText) { [weak self] (searchResults) in
+                guard let fetchedPhotos = searchResults else { return }
+                self?.photos = fetchedPhotos.results
+                self?.collectionView.reloadData()
+                self?.refresh()
+            }
+        })
     }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let photo = photos[indexPath.item]
+//        let paddingSpace = sectionInserts.left * (itemsPerRow + 1)
+//        let availableWidth = view.frame.width - paddingSpace
+//        let widthPerItem = availableWidth / itemsPerRow
+//        let height = CGFloat(photo.height) * widthPerItem / CGFloat(photo.width)
+//        return CGSize(width: widthPerItem, height: height)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return sectionInserts
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return sectionInserts.left
+//    }
 }
