@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,9 +19,11 @@
 		443A87952311D15000A2FA30 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */; };
 		443A87982311D25800A2FA30 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87972311D25800A2FA30 /* SearchResults.swift */; };
 		443A879B2311D68C00A2FA30 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A879A2311D68C00A2FA30 /* PhotosCell.swift */; };
+		72B52F08B3A4D0123B0ABD40 /* Pods_WeeklySwift_1_PhotosLibrary_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEE4A8AD5B3D85859934832 /* Pods_WeeklySwift_1_PhotosLibrary_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283DF68FC28098DDE3290165 /* Pods-WeeklySwift#1(PhotosLibrary).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeklySwift#1(PhotosLibrary).release.xcconfig"; path = "Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary).release.xcconfig"; sourceTree = "<group>"; };
 		443A87762311B37400A2FA30 /* WeeklySwift#1(PhotosLibrary).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeeklySwift#1(PhotosLibrary).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		443A87792311B37400A2FA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443A877B2311B37400A2FA30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		443A87972311D25800A2FA30 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		443A879A2311D68C00A2FA30 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		9D2158703117BF37556FA937 /* Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig"; path = "Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig"; sourceTree = "<group>"; };
+		DAEE4A8AD5B3D85859934832 /* Pods_WeeklySwift_1_PhotosLibrary_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeeklySwift_1_PhotosLibrary_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B52F08B3A4D0123B0ABD40 /* Pods_WeeklySwift_1_PhotosLibrary_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				443A87782311B37400A2FA30 /* WeeklySwift#1(PhotosLibrary) */,
 				443A87772311B37400A2FA30 /* Products */,
+				626E3BEEDE842B419F187BB2 /* Pods */,
+				C0A524D18EF1496E7BD69B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +78,9 @@
 				443A87792311B37400A2FA30 /* AppDelegate.swift */,
 				443A87962311D21600A2FA30 /* Service */,
 				443A877B2311B37400A2FA30 /* SceneDelegate.swift */,
-				443A878D2311B3E000A2FA30 /* MainTabBarController.swift */,
 				443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */,
+				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
+				443A878D2311B3E000A2FA30 /* MainTabBarController.swift */,
 				443A877D2311B37400A2FA30 /* ViewController.swift */,
 				443A877F2311B37400A2FA30 /* Main.storyboard */,
 				443A87822311B37600A2FA30 /* Assets.xcassets */,
@@ -96,9 +104,25 @@
 			isa = PBXGroup;
 			children = (
 				443A87972311D25800A2FA30 /* SearchResults.swift */,
-				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		626E3BEEDE842B419F187BB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D2158703117BF37556FA937 /* Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig */,
+				283DF68FC28098DDE3290165 /* Pods-WeeklySwift#1(PhotosLibrary).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0A524D18EF1496E7BD69B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAEE4A8AD5B3D85859934832 /* Pods_WeeklySwift_1_PhotosLibrary_.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 443A878A2311B37600A2FA30 /* Build configuration list for PBXNativeTarget "WeeklySwift#1(PhotosLibrary)" */;
 			buildPhases = (
+				DEBF865E69DFD0175FCC1861 /* [CP] Check Pods Manifest.lock */,
 				443A87722311B37400A2FA30 /* Sources */,
 				443A87732311B37400A2FA30 /* Frameworks */,
 				443A87742311B37400A2FA30 /* Resources */,
+				C00B00D459ECF8BF197E1642 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C00B00D459ECF8BF197E1642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEBF865E69DFD0175FCC1861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeeklySwift#1(PhotosLibrary)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		443A87722311B37400A2FA30 /* Sources */ = {
@@ -322,6 +390,7 @@
 		};
 		443A878B2311B37600A2FA30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2158703117BF37556FA937 /* Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +408,7 @@
 		};
 		443A878C2311B37600A2FA30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283DF68FC28098DDE3290165 /* Pods-WeeklySwift#1(PhotosLibrary).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
