@@ -104,13 +104,32 @@ class PhotosCollectionViewController: UICollectionViewController {
     // MARK: - UICollecionViewDataSource, UICollecionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return photos.count
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellId", for: indexPath)
-        cell.backgroundColor = .red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCell.reuseId, for: indexPath) as! PhotosCell
+        let unspashPhoto = photos[indexPath.item]
+        cell.unsplashPhoto = unspashPhoto
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        undateNavButtonsState()
+        let cell = collectionView.cellForItem(at: indexPath) as! PhotosCell
+        guard let image = cell.photoImageView.image else { return }
+            selectedImages.append(image)
+        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        undateNavButtonsState()
+        let cell = collectionView.cellForItem(at: indexPath) as! PhotosCell
+        guard let image = cell.photoImageView.image else { return }
+        if let index = selectedImages.firstIndex(of: image) {
+            selectedImages.remove(at: index)
+        }
     }
 
 }
