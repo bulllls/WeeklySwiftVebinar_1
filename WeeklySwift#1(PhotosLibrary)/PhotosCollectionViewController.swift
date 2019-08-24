@@ -10,6 +10,8 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
+    var networkService = NetworkService()
+    
     private lazy var addBarButtonItem: UIBarButtonItem = {
         return UIBarButtonItem(barButtonSystemItem: .add, target: self,
                                action: #selector(addBarButtonTapped))

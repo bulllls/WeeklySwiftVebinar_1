@@ -16,6 +16,8 @@
 		443A878E2311B3E000A2FA30 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A878D2311B3E000A2FA30 /* MainTabBarController.swift */; };
 		443A87902311B48800A2FA30 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */; };
 		443A87922311CA9600A2FA30 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87912311CA9600A2FA30 /* NetworkService.swift */; };
+		443A87952311D15000A2FA30 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */; };
+		443A87982311D25800A2FA30 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87972311D25800A2FA30 /* SearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		443A878D2311B3E000A2FA30 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		443A87912311CA9600A2FA30 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		443A87972311D25800A2FA30 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				443A87792311B37400A2FA30 /* AppDelegate.swift */,
+				443A87962311D21600A2FA30 /* Service */,
 				443A877B2311B37400A2FA30 /* SceneDelegate.swift */,
 				443A878D2311B3E000A2FA30 /* MainTabBarController.swift */,
 				443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */,
-				443A87912311CA9600A2FA30 /* NetworkService.swift */,
 				443A877D2311B37400A2FA30 /* ViewController.swift */,
 				443A877F2311B37400A2FA30 /* Main.storyboard */,
 				443A87822311B37600A2FA30 /* Assets.xcassets */,
@@ -74,6 +78,24 @@
 				443A87872311B37600A2FA30 /* Info.plist */,
 			);
 			path = "WeeklySwift#1(PhotosLibrary)";
+			sourceTree = "<group>";
+		};
+		443A87962311D21600A2FA30 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */,
+				443A87912311CA9600A2FA30 /* NetworkService.swift */,
+				443A87992311D26C00A2FA30 /* Models */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		443A87992311D26C00A2FA30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				443A87972311D25800A2FA30 /* SearchResults.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443A87952311D15000A2FA30 /* NetworkDataFetcher.swift in Sources */,
 				443A877E2311B37400A2FA30 /* ViewController.swift in Sources */,
 				443A877A2311B37400A2FA30 /* AppDelegate.swift in Sources */,
 				443A878E2311B3E000A2FA30 /* MainTabBarController.swift in Sources */,
 				443A87902311B48800A2FA30 /* PhotosCollectionViewController.swift in Sources */,
 				443A87922311CA9600A2FA30 /* NetworkService.swift in Sources */,
+				443A87982311D25800A2FA30 /* SearchResults.swift in Sources */,
 				443A877C2311B37400A2FA30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
