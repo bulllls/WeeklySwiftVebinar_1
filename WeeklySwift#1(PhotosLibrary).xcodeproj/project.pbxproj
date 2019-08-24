@@ -19,6 +19,9 @@
 		443A87952311D15000A2FA30 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */; };
 		443A87982311D25800A2FA30 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87972311D25800A2FA30 /* SearchResults.swift */; };
 		443A879B2311D68C00A2FA30 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A879A2311D68C00A2FA30 /* PhotosCell.swift */; };
+		443A879D2311E10A00A2FA30 /* LikesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A879C2311E10A00A2FA30 /* LikesCollectionViewController.swift */; };
+		443A879F2311E12A00A2FA30 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A879E2311E12A00A2FA30 /* GalleryCollectionViewCell.swift */; };
+		443A87A32311E23600A2FA30 /* UIKit + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87A22311E23600A2FA30 /* UIKit + Extension.swift */; };
 		72B52F08B3A4D0123B0ABD40 /* Pods_WeeklySwift_1_PhotosLibrary_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEE4A8AD5B3D85859934832 /* Pods_WeeklySwift_1_PhotosLibrary_.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		443A87942311D15000A2FA30 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		443A87972311D25800A2FA30 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		443A879A2311D68C00A2FA30 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		443A879C2311E10A00A2FA30 /* LikesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesCollectionViewController.swift; sourceTree = "<group>"; };
+		443A879E2311E12A00A2FA30 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		443A87A22311E23600A2FA30 /* UIKit + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + Extension.swift"; sourceTree = "<group>"; };
 		9D2158703117BF37556FA937 /* Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig"; path = "Target Support Files/Pods-WeeklySwift#1(PhotosLibrary)/Pods-WeeklySwift#1(PhotosLibrary).debug.xcconfig"; sourceTree = "<group>"; };
 		DAEE4A8AD5B3D85859934832 /* Pods_WeeklySwift_1_PhotosLibrary_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeeklySwift_1_PhotosLibrary_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,10 +84,12 @@
 				443A87792311B37400A2FA30 /* AppDelegate.swift */,
 				443A87962311D21600A2FA30 /* Service */,
 				443A877B2311B37400A2FA30 /* SceneDelegate.swift */,
+				443A879C2311E10A00A2FA30 /* LikesCollectionViewController.swift */,
+				443A879E2311E12A00A2FA30 /* GalleryCollectionViewCell.swift */,
 				443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */,
-				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
 				443A878D2311B3E000A2FA30 /* MainTabBarController.swift */,
 				443A877D2311B37400A2FA30 /* ViewController.swift */,
+				443A87A22311E23600A2FA30 /* UIKit + Extension.swift */,
 				443A877F2311B37400A2FA30 /* Main.storyboard */,
 				443A87822311B37600A2FA30 /* Assets.xcassets */,
 				443A87842311B37600A2FA30 /* LaunchScreen.storyboard */,
@@ -103,6 +111,7 @@
 		443A87992311D26C00A2FA30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
 				443A87972311D25800A2FA30 /* SearchResults.swift */,
 			);
 			path = Models;
@@ -241,12 +250,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				443A87952311D15000A2FA30 /* NetworkDataFetcher.swift in Sources */,
+				443A879D2311E10A00A2FA30 /* LikesCollectionViewController.swift in Sources */,
 				443A877E2311B37400A2FA30 /* ViewController.swift in Sources */,
 				443A877A2311B37400A2FA30 /* AppDelegate.swift in Sources */,
 				443A878E2311B3E000A2FA30 /* MainTabBarController.swift in Sources */,
 				443A87902311B48800A2FA30 /* PhotosCollectionViewController.swift in Sources */,
 				443A87922311CA9600A2FA30 /* NetworkService.swift in Sources */,
 				443A87982311D25800A2FA30 /* SearchResults.swift in Sources */,
+				443A87A32311E23600A2FA30 /* UIKit + Extension.swift in Sources */,
+				443A879F2311E12A00A2FA30 /* GalleryCollectionViewCell.swift in Sources */,
 				443A877C2311B37400A2FA30 /* SceneDelegate.swift in Sources */,
 				443A879B2311D68C00A2FA30 /* PhotosCell.swift in Sources */,
 			);
