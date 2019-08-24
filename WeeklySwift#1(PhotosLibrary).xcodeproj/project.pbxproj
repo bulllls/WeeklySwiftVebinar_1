@@ -15,6 +15,7 @@
 		443A87862311B37600A2FA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443A87842311B37600A2FA30 /* LaunchScreen.storyboard */; };
 		443A878E2311B3E000A2FA30 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A878D2311B3E000A2FA30 /* MainTabBarController.swift */; };
 		443A87902311B48800A2FA30 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */; };
+		443A87922311CA9600A2FA30 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A87912311CA9600A2FA30 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		443A87872311B37600A2FA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A878D2311B3E000A2FA30 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		443A87912311CA9600A2FA30 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				443A877B2311B37400A2FA30 /* SceneDelegate.swift */,
 				443A878D2311B3E000A2FA30 /* MainTabBarController.swift */,
 				443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */,
+				443A87912311CA9600A2FA30 /* NetworkService.swift */,
 				443A877D2311B37400A2FA30 /* ViewController.swift */,
 				443A877F2311B37400A2FA30 /* Main.storyboard */,
 				443A87822311B37600A2FA30 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				443A877A2311B37400A2FA30 /* AppDelegate.swift in Sources */,
 				443A878E2311B3E000A2FA30 /* MainTabBarController.swift in Sources */,
 				443A87902311B48800A2FA30 /* PhotosCollectionViewController.swift in Sources */,
+				443A87922311CA9600A2FA30 /* NetworkService.swift in Sources */,
 				443A877C2311B37400A2FA30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
