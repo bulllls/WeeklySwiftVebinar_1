@@ -26,6 +26,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         collectionView.backgroundColor = .orange
         setupNavigationBar()
         setupCollectionView()
+        setupSearchBar()
     }
     
     // MARK: - NavigationItems action
@@ -66,6 +67,13 @@ class PhotosCollectionViewController: UICollectionViewController {
         navigationItem.rightBarButtonItems = [actionBarButtonItem, addBarButtonItem]
     }
     
+    private func setupSearchBar() {
+        let seacrhController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = seacrhController
+        seacrhController.hidesNavigationBarDuringPresentation = false
+        seacrhController.obscuresBackgroundDuringPresentation = false
+        seacrhController.searchBar.delegate = self
+    }
     
     // MARK: - UICollecionViewDataSource, UICollecionViewDelegate
     
@@ -79,4 +87,15 @@ class PhotosCollectionViewController: UICollectionViewController {
         return cell
     }
 
+}
+
+// MARK: - UISearchBarDelegate
+
+extension PhotosCollectionViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        
+
+    }
 }
