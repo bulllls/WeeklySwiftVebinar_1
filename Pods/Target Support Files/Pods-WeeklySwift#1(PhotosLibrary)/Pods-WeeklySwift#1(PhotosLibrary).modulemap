@@ -1,0 +1,6 @@
+framework module Pods_WeeklySwift_1_PhotosLibrary_ {
+  umbrella header "Pods-WeeklySwift#1(PhotosLibrary)-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -84,6 +84,7 @@
 				443A87792311B37400A2FA30 /* AppDelegate.swift */,
 				443A87962311D21600A2FA30 /* Service */,
 				443A877B2311B37400A2FA30 /* SceneDelegate.swift */,
+				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
 				443A879C2311E10A00A2FA30 /* LikesCollectionViewController.swift */,
 				443A879E2311E12A00A2FA30 /* GalleryCollectionViewCell.swift */,
 				443A878F2311B48800A2FA30 /* PhotosCollectionViewController.swift */,
@@ -111,7 +112,6 @@
 		443A87992311D26C00A2FA30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				443A879A2311D68C00A2FA30 /* PhotosCell.swift */,
 				443A87972311D25800A2FA30 /* SearchResults.swift */,
 			);
 			path = Models;
